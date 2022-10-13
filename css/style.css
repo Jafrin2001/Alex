@@ -454,7 +454,7 @@ h4 {
 
 /* Services area css start */
 #services {
-  padding: 160px 0;
+  padding: 140px 0;
   position: relative;
 }
 
@@ -600,11 +600,11 @@ h4 {
 
 /* Testimonial area css start */
 #testimonial {
-  padding-bottom: 160px;
+  padding-bottom: 140px;
 }
 
 #testimonial .section_header_bar {
-  right: 34%;
+  right: 36%;
 }
 
 .testimonial_content {
