@@ -31,6 +31,10 @@ span {
   line-height: 0.8;
 }
 
+img {
+  vertical-align: middle;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -74,6 +78,7 @@ h2 {
   font-family: var(--header_font);
   font-weight: var(--bold);
   color: var(--primary_color);
+  text-transform: capitalize;
 }
 
 h3 {
@@ -85,6 +90,7 @@ h3 {
 
 h4 {
   font-size: 24px;
+  line-height: 24px;
   font-family: var(--header_font);
   font-weight: var(--bold);
   color: var(--primary_color);
@@ -460,7 +466,7 @@ h4 {
   position: absolute;
   width: 1370px;
   height: 265px;
-  background: #F9F9F9;
+  background: #f9f9f9;
   bottom: 82px;
   left: 50%;
   transform: translateX(-50%);
@@ -527,16 +533,301 @@ h4 {
 /* Services area css end */
 
 /* Brunch area css start */
+#brunch {
+  padding: 90px 0 115px 0;
+}
+
+.brunch_left {
+  width: 495px;
+}
+
+.brunch_left .section_header {
+  text-align: start;
+}
+
+.brunch_left .section_header_bar {
+  right: 23%;
+}
+
+.brunch_left .brunch_left_txt p {
+  padding: 60px 55px 30px 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.brunch_right {
+  width: 540px;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.counter_items {
+  padding: 25px 30px;
+  background-color: #f9f9f9;
+  margin-top: 30px;
+}
+
+.counter_items h2 {
+  color: var(--secondery_color);
+  padding-bottom: 10px;
+}
+
+.brunch_right_items {
+  margin-bottom: 45px;
+}
+
+.brunch_border {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.brunch_right_items h4 {
+  font-weight: var(--regular);
+  color: var(--sub_header);
+}
+
+.brunch_right_items h3 {
+  padding: 15px 0 25px 0;
+}
+
+.brunch_right_items .brunch_date p {
+  padding-top: 15px;
+  color: var(--date_add);
+}
 /* Brunch area css end */
 
-/* Brunch area css start */
-/* Brunch area css end */
+/* Testimonial area css start */
+#testimonial {
+  padding-bottom: 160px;
+}
 
-/* Brunch area css start */
-/* Brunch area css end */
+#testimonial .section_header_bar {
+  right: 34%;
+}
 
-/* Brunch area css start */
-/* Brunch area css end */
+.testimonial_content {
+  margin-top: 80px;
+}
 
-/* Brunch area css start */
-/* Brunch area css end */
+.testimonial_bg {
+  background-color: #f9f9f9;
+  padding: 80px 90px;
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.testimonial_text {
+  width: 617px;
+  display: flex;
+}
+
+.testimonial_text_inner {
+  padding: 60px 0 0 19px;
+}
+
+.testimonial_text_inner p {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+
+.testi_info_text {
+  margin-left: 15px;
+}
+
+.testi_info_text h5 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: var(--bold);
+  color: var(--primary_color);
+  margin-bottom: 12px;
+}
+
+.testi_info_text p {
+  font-size: var(--common_font_size);
+  font-weight: 500;
+  color: var(--date_add);
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+.testimonial_icon {
+  margin: 50px 20px 0 0;
+}
+
+.testimonial_icon a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #efefef;
+  color: #aaaaaa;
+  font-size: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+
+.testimonial_icon:hover a {
+  background: var(--secondery_color);
+  color: #fff;
+}
+
+.testimonial_img {
+  width: 445px;
+}
+
+/* Testimonial area css end */
+
+/* Project area css start */
+#project {
+  padding-bottom: 90px;
+}
+
+#project .section_header_bar {
+  right: 46%;
+}
+
+.project_main {
+  margin-top: 80px;
+}
+
+.project_items {
+  width: 570px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project_items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all linear 0.8s;
+  -webkit-transition: all linear 0.8s;
+  -moz-transition: all linear 0.8s;
+  -ms-transition: all linear 0.8s;
+  -o-transition: all linear 0.8s;
+}
+
+.project_items .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
+  display: flex;
+  align-items: flex-end;
+}
+
+.overlay_content {
+  padding: 0 0 35px 35px;
+}
+
+.overlay_content h4 {
+  text-transform: capitalize;
+  color: #fff;
+  line-height: 34px;
+}
+
+.overlay_content p {
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.project_items:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+/* Project area css end */
+
+/* Contact area css start */
+#contact {
+  text-align: center;
+}
+
+.contact_border {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.contact_content h4 {
+  color: var(--secondery_color);
+}
+
+.contact_content p {
+  font-size: 18px;
+  padding: 50px 0 10px 0;
+  line-height: 18px;
+}
+
+.contact_content h2 {
+  line-height: 58px;
+  text-transform: lowercase;
+}
+.contact_call {
+  margin: 22px 0 50px 0;
+}
+
+.contact_content a {
+  font-size: 18px;
+  color: var(--para_color);
+  font-weight: var(--regular);
+  line-height: 18px;
+}
+
+.contact_menu {
+  margin-bottom: 85px;
+}
+
+.contact_menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_menu ul li {
+  padding: 0 15px;
+}
+
+.contact_menu ul li a {
+  font-size: 14px;
+  color: var(--primary_color);
+  line-height: 14px;
+  font-weight: var(--regular);
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+}
+
+.contact_menu ul li a:hover {
+  color: var(--secondery_color);
+}
+/* Contact area css end */
+
+/* Footer area css end */
+#footer {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer_bottom p {
+  font-size: 15px;
+}
+/* Footer area css end */
