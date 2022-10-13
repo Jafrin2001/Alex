@@ -1,0 +1,542 @@
+/* common css start*/
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  line-height: 0.8;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space {
+  justify-content: space-between;
+}
+
+.valign {
+  align-items: center;
+}
+
+:root {
+  --primary_color: #222222;
+  --secondery_color: #ff5733;
+  --para_color: #888888;
+  --sub_header: #555555;
+  --date_add: #777777;
+  --hover_color: #fce2dc;
+  --header_font: "Noticia Text", serif;
+  --regular: 400;
+  --bold: 700;
+  --common_font_size: 16px;
+}
+
+p {
+  font-size: var(--common_font_size);
+  line-height: 26px;
+  font-weight: var(--regular);
+  color: var(--para_color);
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 63px;
+  font-family: var(--header_font);
+  font-weight: var(--bold);
+  color: var(--primary_color);
+}
+
+h3 {
+  font-size: 36px;
+  font-family: var(--header_font);
+  font-weight: var(--bold);
+  color: var(--primary_color);
+}
+
+h4 {
+  font-size: 24px;
+  font-family: var(--header_font);
+  font-weight: var(--bold);
+  color: var(--primary_color);
+}
+
+.section_header {
+  text-align: center;
+  position: relative;
+}
+
+.section_header_bar {
+  position: absolute;
+  right: 32%;
+  bottom: -30px;
+}
+/* common css end */
+
+/* Navbar area css start */
+#main_menu {
+  border-bottom: 1px solid #f1f1f1;
+  padding: 35px 0 30px 0;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  padding: 0 29px;
+}
+
+.menu ul li:last-child {
+  padding-right: 0;
+}
+
+.menu ul li a {
+  color: var(--primary_color);
+  font-size: 14px;
+  font-weight: var(--regular);
+  text-transform: capitalize;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+
+.menu ul li:hover a {
+  color: var(--secondery_color);
+}
+/* Navbar area css end */
+
+/* Banner area css start */
+#banner {
+  padding: 80px 0 100px 0;
+  position: relative;
+}
+
+.shape_one {
+  width: 377px;
+  height: 377px;
+  border: 1px solid var(--secondery_color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top: 389px;
+  left: -190px;
+  opacity: 0.5;
+}
+
+.shape_tow {
+  width: 279px;
+  height: 279px;
+  border: 1px solid var(--secondery_color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  right: -140px;
+  top: 31px;
+  opacity: 0.5;
+}
+
+.inside_shape {
+  position: relative;
+}
+
+.inside_shape .shape_three {
+  width: 75px;
+  height: 75px;
+  border: 1px solid var(--secondery_color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  opacity: 0.5;
+}
+
+.inside_shape .shape_four {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--secondery_color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  left: 100px;
+  top: 507px;
+  opacity: 0.5;
+}
+
+.inside_shape .shape_five {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--secondery_color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  right: 184px;
+  top: 167px;
+  opacity: 0.5;
+}
+
+.inside_shape .shape_six {
+  width: 135px;
+  height: 135px;
+  border: 1px solid var(--secondery_color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 430px;
+  opacity: 0.5;
+}
+
+.banner_content {
+  text-align: center;
+  width: 666px;
+  margin: 0 auto;
+}
+.banner_img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border: 10px solid #fce2dc;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+}
+
+.banner_img img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* .banner_img {
+  position: relative;
+}
+
+.banner_img img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 5px solid #fce2dc;
+} */
+
+.banner_img::after,
+.banner_img::before {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 28px;
+  border: 18px solid var(--secondery_color);
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: -1;
+}
+
+.banner_img::after {
+  left: -40px;
+}
+
+.banner_img::before {
+  right: -40px;
+}
+
+.banner_img_shape {
+  position: relative;
+}
+
+.banner_img_shape::after,
+.banner_img_shape::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: #ff5733;
+  opacity: 0.3;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  top: 45px;
+}
+
+.banner_img_shape::after {
+  left: 225px;
+}
+
+.banner_img_shape::before {
+  right: 225px;
+}
+
+.banner_text h4 {
+  color: var(--secondery_color);
+  line-height: 24px;
+  padding: 30px 0 20px 0;
+}
+
+.banner_text h1 {
+  color: var(--primary_color);
+  line-height: 74px;
+  font-size: 64px;
+  font-weight: var(--bold);
+  font-family: var(--header_font);
+  text-transform: capitalize;
+}
+
+.banner_text p {
+  line-height: 30px;
+  font-size: 18px;
+  padding: 30px 80px 57px 80px;
+}
+
+.banner_btn a {
+  font-size: var(--common_font_size);
+  font-weight: var(--bold);
+  color: #ffffff;
+  padding: 19px 40px;
+  background-color: var(--secondery_color);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.banner_btn a:hover {
+  color: var(--primary_color);
+  background-color: var(--hover_color);
+  border: 1px solid var(--secondery_color);
+}
+/* Banner area css end */
+
+/* Brand area css start */
+#brand {
+  padding-bottom: 120px;
+}
+
+.brand_items img {
+  padding: 10px 20px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.brand_items:hover img {
+  background-color: var(--hover_color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/* Brand area css end */
+
+/* Network area css start */
+#network {
+  position: relative;
+  padding: 92px 0;
+}
+.network_shape {
+  position: absolute;
+  width: 790px;
+  height: 365px;
+  background-color: #f9f9f9;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  z-index: -1;
+}
+
+.network_header {
+  width: 50%;
+}
+
+.network_text {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.network_text p {
+  font-size: 18px;
+  line-height: 30px;
+}
+/* Network area css end */
+
+/* Services area css start */
+#services {
+  padding: 160px 0;
+  position: relative;
+}
+
+.services_main {
+  margin-top: 80px;
+}
+
+#services .services_bg {
+  position: absolute;
+  width: 1370px;
+  height: 265px;
+  background: #F9F9F9;
+  bottom: 82px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+  z-index: -1;
+}
+
+.service_items.first {
+  padding: 53px 23px 55px 23px;
+}
+
+.service_items {
+  padding: 48px 23px 49px 23px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  text-align: center;
+  width: 370px;
+  background: #ffffff;
+  box-shadow: 0 15px 55px rgba(0, 0, 0, 0.06);
+}
+
+.icon_one {
+  margin-bottom: 50px;
+}
+
+.icon_tow {
+  margin-bottom: 12px;
+}
+
+.icon_three {
+  margin-bottom: 30px;
+}
+
+.service_text h4 {
+  padding-bottom: 20px;
+}
+
+.service_text a {
+  justify-content: center;
+  padding-top: 25px;
+  font-size: var(--common_font_size);
+  color: var(--secondery_color);
+  font-weight: var(--bold);
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+}
+
+.service_text a i {
+  padding-left: 5px;
+}
+
+.service_text a:hover {
+  margin-left: 15px;
+}
+/* Services area css end */
+
+/* Brunch area css start */
+/* Brunch area css end */
+
+/* Brunch area css start */
+/* Brunch area css end */
+
+/* Brunch area css start */
+/* Brunch area css end */
+
+/* Brunch area css start */
+/* Brunch area css end */
+
+/* Brunch area css start */
+/* Brunch area css end */
