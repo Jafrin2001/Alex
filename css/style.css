@@ -35,6 +35,11 @@ img {
   vertical-align: middle;
 }
 
+::selection {
+  background: #000;
+  color: #fff;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -604,7 +609,7 @@ h4 {
 }
 
 #testimonial .section_header_bar {
-  right: 39%;
+  right: 36%;
 }
 
 .testimonial_content {
